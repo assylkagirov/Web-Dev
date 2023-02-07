@@ -1,0 +1,273 @@
+<html>
+    <head>
+        
+        <title> facebook </title>
+        <style>
+            body{
+                background-color: #f0f2f5;
+            }
+            #logo-coordinates{
+                position: absolute;
+                height: 438px;
+                left: 200px;
+
+            }
+            #underLogo-text{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 28px;
+                font-weight: normal;
+                line-height: 32px;
+                width: 500px;
+                position: absolute;
+                left: 228px;
+                margin-top: 265px;
+            }
+            #first-frame{
+                width: 396px;
+                height: 334px; 
+                position: absolute;
+                margin-left: 795px;
+                margin-top: 136px;
+                border-radius: 9px 9px 9px 9px;
+                border: 1px;
+                box-shadow: 2px 1px 1px rgb(223, 221, 221);
+      
+            }
+            #loginf{
+                width: 359px;
+                height: 44px;
+                position: absolute;
+                margin-left: 814px;
+                margin-top: 153px;
+                border-radius: 6px 6px 6px 6px;
+                border: 1px groove rgb(204, 204, 204);
+            }
+            input::placeholder {
+            font: 17px sans-serif;
+            }
+            #passwordf{
+                width: 359px;
+                height: 42px;
+                position: absolute;
+                margin-left: 814px;
+                margin-top: 218px;
+                border-radius: 6px 6px 6px 6px;
+                border: 1px groove rgb(204, 204, 204);
+            }
+            #button-entry{
+                width: 367px;
+                height: 46px;
+                position: absolute;
+                margin-left: 814px;
+                margin-top: 283px;
+                border-radius: 6px 6px 6px 6px;
+                font-weight: bold;
+                font-size: 19px;
+                background-color: #1877f2;
+                color: white;  
+                border: 1px groove  #3883e4;
+            }
+            #button-entry:hover{
+                background-color: #1160c7;
+            }
+         
+            #forgotten-button{
+                position: absolute;
+                margin-top: 346px;
+                margin-left: 943px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 550;
+                font-size: 13px;
+                text-decoration: none;
+                color: #1160c7;
+           
+            }
+            #forgotten-button:hover{
+                text-decoration: underline;
+            }
+            #cracc{
+                width: 190px;
+                height: 46px;
+                position: absolute;
+                margin-left: 907px;
+                margin-top: 400px;
+                border-radius: 6px 6px 6px 6px;
+                font-weight: bold;
+                font-size: 19px;
+                background-color: #11be01;
+                color: white;  
+                border: 1px groove  #11be01;
+
+            }
+            #cracc:hover{
+                background-color:  #57901d;
+            }
+            #line{
+                width: 361px;
+                position: absolute;
+                margin-left: 814px;
+                margin-top: 378px;
+                border: 0.2px solid rgb(222, 221, 221);
+              
+            }
+            #cracc2{
+                position: absolute;
+                width: 410px;
+                font-size: 14px;
+                margin-top: 500px;
+                margin-left: 812px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #in-cracc2:hover{
+                text-decoration: underline;
+            }
+            #cracc3{
+                position: absolute;
+                font-size: 14px;
+                margin-top: 520px;
+                margin-left: 949px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #down1{
+                position: absolute;
+                margin-top: 25px;
+                margin-left: 233px;
+                font-family:Arial, Helvetica, sans-serif;
+                color: grey;
+                font-size: 12px;
+                word-spacing: 11px;
+            }
+            .languages{
+                text-decoration: none;
+                color: grey;    
+            }
+            #line2{
+                width: 934px;
+                position: absolute;
+                margin-left: 233px;
+                margin-top: 60px;
+                border: 0.2px solid rgb(227, 226, 226);
+            }
+            #down2{
+                position: absolute;
+                margin-top: 75px;
+                margin-left: 233px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: grey;
+                font-size: 12px;
+                word-spacing: 13px;
+            }
+            
+            .side1{
+                text-decoration: none;
+                color: grey;  
+                line-height: 1.5;
+            }
+            .side2{
+                text-decoration: none;
+                color: grey; 
+                line-height: 1.5;
+            }
+            .side3{
+                position: absolute;
+                margin-top: 180px;
+                margin-left: 233px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: grey;
+                font-size: 12px;
+            }
+            .languages:hover{
+                text-decoration: underline;
+            }
+            .side1:hover{
+                text-decoration: underline;
+            }
+            .side2:hover{
+                text-decoration: underline;
+            }
+            .side3:hover{
+                text-decoration: underline;
+            }
+            #down-color{
+                position: absolute;
+                background-color: white;
+                width: 100%;
+                top: 740px;
+                height: 220px;
+            }
+        </style>
+    </head>
+    <body>  
+        <img id = "logo-coordinates" src = "https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt = "facebook" width = "300", height = "100">
+        <h2 id = "underLogo-text"> Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми. </h2>
+        <form>
+            <input id = "first-frame">
+            <input placeholder = "Электронный адрес или номер телефона" id = "loginf" type = "login">
+            <input placeholder = " Пароль" id = "passwordf" type = "password">
+            <p><button id = "button-entry"> Вход </button></p>
+            <a id = "forgotten-button"> Забыли пароль? </a>
+            <hr id="line">
+            <p><button id = "cracc"> Создать аккаунт </button></p>
+        </form>
+        <p id = "cracc2"><a id = "in-cracc2"><strong>Создать Страницу </strong> </a> знаменитости, музыкальной группы</p>
+        <p id = "cracc3"> или компании.</p>
+        
+        <div id = "down-color">
+        <p id = "down1">Русский
+            <a class = "languages"> English(US)</a>
+            <a class = "languages">Türkçe</a>
+            <a class = "languages">Bahasa Indonesia</a>
+            <a class = "languages">Қазақша</a>
+            <a class = "languages">中文(简体)</a>
+            <a class = "languages">Deutsch</a>
+            <a class = "languages">한국어</a>
+            <a class = "languages">Shqip</a>
+            <a class = "languages">Español</a>
+            <a class = "languages">Português (Brasil)</a>
+            <button >+</button>
+        </p>
+        <hr id="line2">
+
+        
+        <p id = "down2">
+           <a class = "side1">Регистрация</a>
+           <a class = "side1">Вход</a>
+           <a class = "side1">Messenger</a>
+           <a class = "side1">Facebook Lite</a>
+           <a class = "side1">Watch</a>
+           <a class = "side1">Люди</a>
+           <a class = "side1">Страницы</a>
+           <a class = "side1">Категории Страниц</a>
+           <a class = "side1">Места</a>
+           <a class = "side1">Игры</a>
+           <a class = "side1">Места</a>
+           <a class = "side1">Marketplace</a>
+           <br>
+           <a class = "side2">Facebook Pay</a>
+           <a class = "side2">Группы</a> 
+           <a class = "side2">Вакансии</a>
+           <a class = "side2">Oculus</a>
+           <a class = "side2">Portal</a>
+           <a class = "side2">Instagram</a>
+           <a class = "side2">Местные</a>
+           <a class = "side2">Благотворительные акции</a>
+           <a class = "side2">Услуги</a>
+           <a class = "side2">Центр информации о голосовании</a>
+           <br>
+           <a class = "side2">О нас</a>
+           <a class = "side2">Создать рекламу</a>
+           <a class = "side2">Создать Страницу</a>
+           <a class = "side2">Разработчикам</a>
+           <a class = "side2">Вакансии</a>
+           <a class = "side2">Конфиденциальность</a>
+           <a class = "side2">Файлы cookie</a>
+           <a class = "side2">Выбор рекламы</a>
+           <br>
+           <a class = "side2">Условия использования</a>
+           <a class = "side2">Справка</a>
+           <br>
+           <p class = "side3"> Facebook © 2021 </p>
+        </p>
+        </div>
+    </body>
+</html>
