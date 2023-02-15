@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let newStr = str[0].toUpperCase() + str.slice(1);
+
+        function checkSpam(str) {
+            let lowerStr = str.toLowerCase();
+            return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+        }
+        
+        alert( checkSpam('buy ViAgRA now') );
+        alert( checkSpam('free xxxxx') );
+        alert( checkSpam("innocent rabbit") );
+        function truncate(str, maxlength) {
+            return (str.length > maxlength) ?
+            str.slice(0, maxlength - 1) + '…' : str;
+        }
+        function extractCurrencyValue(str) {
+            return +str.slice(1);
+        }
+    </script>
+</body>
+</html>
