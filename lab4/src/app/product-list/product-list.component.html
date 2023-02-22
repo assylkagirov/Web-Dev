@@ -12,7 +12,17 @@
       Description: {{product.description}}
   </p>
 
-  <button type="button" (click) = "share()">
+  <p *ngIf="product.price">
+    Price: {{product.price}} ₸
+</p>
+<p *ngIf="product.link">
+  Link to the product: <a href="{{product.link}}">{{product.link}}</a>
+</p>
+<p *ngIf="product.image">
+ <img src="{{product.image}}" alt="image" width="100px">
+</p>
+
+<button type="button" (click)= "redirect(product.link)">
     Share
   </button>
   <app-product-alerts

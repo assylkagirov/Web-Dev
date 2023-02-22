@@ -16,6 +16,10 @@ export class ProductListComponent {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+
+  redirect(link: string){
+    window.open("https://telegram.me/share/url?url=" + link)
+  }
 }
 
 
