@@ -1,7 +1,7 @@
 <h2>Products</h2>
 
 <div *ngFor="let product of products">
-  <div *ngIf="product.show">
+  <div *ngIf="product.show && product.category==currCategory">
   <h3>
     <a [title] = "product.name + ' details' ">
       {{ product.name }}
@@ -37,10 +37,11 @@
   [product]="product" 
   (notify)="onNotify()">
   </app-product-alerts>
-  </div>
   <button (click)="removepr(product)">
-    Remove/Show
+    Remove
   </button>
+  </div>
+  
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.

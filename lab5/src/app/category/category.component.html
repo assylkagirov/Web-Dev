@@ -1,10 +1,9 @@
-
-<div class="category-list" *ngFor="let category of category">
+<div class="category-list" *ngFor="let category of category" style="display: inline; margin: 20px">
   <button type="button" (click)="Selected(category.name)">
     {{category.name}} 
 </button>
 </div>
 
 <div *ngIf="currentcat != undefined">
-    <app-product-list></app-product-list>
+    <app-product-list [currCategory]=currentcat></app-product-list>
 </div>
