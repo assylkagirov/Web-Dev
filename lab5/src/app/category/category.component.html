@@ -1,1 +1,10 @@
-<h2>Categories</h2>
+
+<div class="category-list" *ngFor="let category of category">
+  <button type="button" (click)="Selected(category.name)">
+    {{category.name}} 
+</button>
+</div>
+
+<div *ngIf="currentcat != undefined">
+    <app-product-list></app-product-list>
+</div>

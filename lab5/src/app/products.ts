@@ -5,6 +5,7 @@ export interface Product {
   description: string;
   rating: number;
   link: string;
+  category: string,
   image: string;
   likes:number;
   isLiked: boolean;
