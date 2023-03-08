@@ -1,1 +1,8 @@
 <p>albums works!</p>
+<ul *ngIf="loaded">
+  <li class="album" *ngFor="let album of albums">
+    <a class="album-id"  routerLink="/albums/{{album.id}}" >{{album.id}} {{album.title}}</a>
+    <a (click)="deleteAlbum(album)" id="remove"><img src="https://www.svgrepo.com/show/499798/delete.svg" width="40px" height="20px"></a>
+
+  </li>
+</ul>

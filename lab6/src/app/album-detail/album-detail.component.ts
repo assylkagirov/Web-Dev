@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './album-detail.component.html',
   styleUrls: ['./album-detail.component.css']
 })
-export class AlbumDetailComponent {
+export class AlbumDetailsComponent {
+  album : Album;
+  loaded: boolean;
+  newTitle: string;
+  constructor(private route : ActivatedRoute,private albumService :AlbumsService){
+    this.album = {} as Album;
+    this.loaded = true;
+    this.newTitle="";
+  }
 
 }
