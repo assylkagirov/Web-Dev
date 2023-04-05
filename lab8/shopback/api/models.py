@@ -2,11 +2,11 @@ from django.db import models
 
 # Create your models here.
 class Product(models.Model):
-    name = models.CharField()
-    price = models.FloatField()
-    description = models.TextField()
-    count = models.IntegerField()
-    is_active = models.BooleanField()
+    name = models.CharField(max_length=300)
+    price = models.FloatField(default=0)
+    description = models.TextField(max_length=300)
+    count = models.IntegerField(default=0)
+    is_active = models.BooleanField(default=False)
 
     def to_json(self):
         return {
@@ -18,7 +18,7 @@ class Product(models.Model):
             'is_active': self.is_active
         }
 class Category(models.Model):
-    name = models.CharField()
+    name = models.CharField(max_length=300)
 
     def to_json(self):
         return {
