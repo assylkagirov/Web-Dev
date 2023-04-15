@@ -3,15 +3,21 @@ import json
 from django.http.response import JsonResponse
 from .models import *
 from django.views.decorators.csrf import csrf_exempt
+from api.serializers import CompanySerializer1
+from api.serializers import CompanySerializer2
 
 # Create your views here.
+
+
 
 @csrf_exempt
 def c_list(request):
     if request.method == 'GET':
         companies = Company.objects.all()
-        companies_json = [company.to_json() for company in companies]
-        return JsonResponse(companies_json, safe=False)
+        serializer = CompanySerializer2(companies, many=True)
+
+        # companies_json = [company.to_json() for company in companies]
+        return JsonResponse(serializer.data, safe=False)
 
     elif request.method == 'POST':
         data = json.loads(request.body)
@@ -28,7 +34,7 @@ def c_detail(request, company_id):
     try:
         company = Company.objects.get(id=company_id)
     except Company.DoesNotExist as e:
-        return JsonResponse({'message': str(e)}, status=400)
+        return JsonResponse({'error': str(e)}, status=400)
 
     if request.method == 'GET':
         return JsonResponse(company.to_json())
